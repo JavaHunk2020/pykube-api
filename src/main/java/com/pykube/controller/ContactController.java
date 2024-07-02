@@ -1,7 +1,8 @@
-package pykube.controller;
+package com.pykube.controller;
 
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -13,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import pykube.net.Contact;
-import pykube.service.ContactService;
+import com.pykube.net.Contact;
+import com.pykube.service.ContactService;
 
 @RestController
 @RequestMapping("/api/contacts")
@@ -23,6 +24,12 @@ public class ContactController {
 
     @Autowired
     private ContactService contactService;
+    
+    @GetMapping("/hello")
+    public Map<String,String> getContactssa(){
+    	return Map.of("Name","Nagendra Kumar");
+    }
+   
     
     @GetMapping
     public ResponseEntity<List<Contact>> getContacts() {

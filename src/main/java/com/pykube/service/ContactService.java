@@ -1,4 +1,4 @@
-package pykube.service;
+package com.pykube.service;
 
 
 import java.util.List;
@@ -7,8 +7,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import pykube.net.Contact;
-import pykube.repo.ContactRepository;
+import com.pykube.net.Contact;
+import com.pykube.repo.ContactRepository;
 
 @Service
 public class ContactService {

@@ -1,4 +1,4 @@
-package pykube.controller;
+package com.pykube.controller;
 
 
 
@@ -6,8 +6,8 @@ package pykube.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import pykube.net.PykubeModel;
-import pykube.service.ReviewService;
+import com.pykube.net.PykubeModel;
+import com.pykube.service.ReviewService;
 
 import java.util.List;
 

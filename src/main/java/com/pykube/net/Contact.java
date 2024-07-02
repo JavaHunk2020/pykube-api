@@ -1,4 +1,4 @@
-package pykube.net;
+package com.pykube.net;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

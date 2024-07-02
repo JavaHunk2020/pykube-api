@@ -1,4 +1,4 @@
-package pykube.service;
+package com.pykube.service;
 
 
 
@@ -6,8 +6,8 @@ package pykube.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import pykube.net.PykubeModel;
-import pykube.repo.PykubeRepo;
+import com.pykube.net.PykubeModel;
+import com.pykube.repo.PykubeRepo;
 
 import java.util.List;
 
